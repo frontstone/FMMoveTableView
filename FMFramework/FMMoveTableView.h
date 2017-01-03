@@ -4,7 +4,7 @@
 //
 //  Created by Florian Mielke.
 //  Copyright 2012 Florian Mielke. All rights reserved.
-//  
+//
 
 #import <QuartzCore/QuartzCore.h>
 
@@ -103,5 +103,7 @@
  * @discussion The data source is in a dirty state when moving a row and is only being updated after the user releases the moving row.
  */
 - (NSIndexPath *)adaptedIndexPathForRowAtIndexPath:(NSIndexPath *)indexPath;
+
+@property (nonatomic, strong) UILongPressGestureRecognizer *movingGestureRecognizer;
 
 @end

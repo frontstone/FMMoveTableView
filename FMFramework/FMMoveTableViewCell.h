@@ -11,5 +11,7 @@
 
 - (void)prepareForMoveSnapshot;
 - (void)prepareForMove;
+- (void)finishForMove;
+- (UIView *)snapshotView;
 
 @end
